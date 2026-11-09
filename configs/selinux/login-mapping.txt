@@ -1,0 +1,6 @@
+
+Login Name           SELinux User         MLS/MCS Range        Service
+
+__default__          unconfined_u         s0-s0:c0.c1023       *
+eve                  user_u               s0                   *
+root                 unconfined_u         s0-s0:c0.c1023       *
