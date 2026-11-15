@@ -1,0 +1,7 @@
+[Unit]
+Description=ClamAv scheduled scan
+
+[Service]
+Type=oneshot
+SuccessExitStatus=1
+ExecStart=/usr/bin/clamscan -r -i --move=/var/quarantine --log=/var/log/clamav/scan.log /home /srv /tmp /var/tmp
